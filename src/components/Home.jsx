@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-const Home = () => {
+function Home () {
   return (
-    <header className='container flex flex-col justify-center mt-40 items-center'>
+    <header className='container flex flex-col justify-center items-center max-w-full min-h-screen self-center -mt-20'>
       <img className='hover:opacity-80' src='/logo-amber.png' width='400' />
       <h1 className='text-lg text-amber-400 -mt-2'>With great power comes great responsibility.</h1>
       <Link to='/heroes/'>
@@ -11,6 +11,6 @@ const Home = () => {
       </Link>
     </header>
   );
-};
+}
 
 export default Home;
